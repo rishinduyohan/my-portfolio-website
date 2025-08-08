@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const items = [
-       
+
     ];
 
     const container = document.createElement('div');
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const navbarContainer = document.getElementById('navbar');
-if(navbarContainer){
+if (navbarContainer) {
     const navItem = document.createElement('nav');
     navItem.className = 'navbar navbar-expand-lg navbar-dark bg-transparent py-4 fixed';
-    navItem.innerHTML=`
+    navItem.innerHTML = `
         <div class="container">
             <a class="navbar-brand" href="#"><img src="assets/images/icons8-chatgpt.svg" alt="Logo"
                     style="width:40px;"></a>
@@ -45,5 +45,4 @@ if(navbarContainer){
         </div>
     `;
     navbarContainer.appendChild(navItem);
-
 }
