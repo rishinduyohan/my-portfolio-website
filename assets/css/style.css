@@ -1,0 +1,67 @@
+.icon-box {
+    background-color: #e6e6e6;
+    padding: 12px;
+    border-radius: 6px;
+    color: #0b1c3b;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .nav-color {
+        display: block;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: #0b1c3b;
+        text-decoration: none;
+        background: none;
+        border: 0;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-color {
+        display: block;
+        margin-right: 50px;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        text-decoration: none;
+        background: none;
+        border: 0;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+}
+
+.nav-color:hover {
+    color: #e6e6e6;
+}
+.icon-box:hover {
+    background-color: #ffff;
+}
+
+.hero-img {
+    max-width: 350px;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.btn-light {
+    font-weight: bold;
+}
+
+.color-navy {
+    color: #14213D;
+}
+
+.color-gray {
+    color: #62656B;
+}
