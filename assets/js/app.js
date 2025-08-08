@@ -23,3 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.body.appendChild(container);
 });
+
+const navbarContainer = document.getElementById('navbar');
+if(navbarContainer){
+    const navItem = document.createElement('div');
+    navItem.className = 'navbar';
+    navItem.innerHTML=`
+        <h2>hello</h2>
+    `;
+    navbarContainer.appendChild(navItem);
+
+}
