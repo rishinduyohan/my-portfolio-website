@@ -4,6 +4,11 @@ const items = [
     { id: 2, title: 'Software <br>Engineering Student', description: 'I’m a software engineering<br> student at ICET.', img: 'assets/images/images.png' },
     { id: 3, title: 'Designer', description: ' I’m a Graphic Designer <br>of CV&B', img: 'assets/images/CV&B.png' },
 ];
+const experience = [
+    {id:1, title:'Aspiring Software Engineer (2025 - Present)',description:' Currently pursuing a formal path in software engineering, developing hands-on experience in programming, system design, and application development. Actively engaged in academic projects that enhance technical proficiency and problem-solving abilities, while staying committed to continuous learning and real-world application'},
+    {id:2,title:'Founder & Graphic Designer - CV&B (2021 - Present)',description:' Launched and operate CV&B, a personal creative brand offering branding, print, and digital design services. Successfully managed end-to-end design projects across diverse industries, cultivating practical skills in client communication, project coordination, and entrepreneurship from a young age'},
+    {id:3,title:'Freelance Creative Professional (2020 - Present)',description:' Worked independently as a visual designer and web developer, delivering customized solutions for individuals and businesses. This role sharpened creative and technical versatility, combining web technologies with design tools to build digital identities and nurture lasting client relationships.'}
+];
 const education = [
     {id:1, title:'HND in Software Engineering',institute:'Institute of Computer Eng. Technology',description:'I am an aspiring software engineer currently studying at the Institute of Computer Engineering Technology (iCET). My academic path is intricately woven with my innate flair for coding and a keen interest in project management.',update:'Last updated 3 mins ago',img:'assets/images/images.png'},
     {id:2, title:'Diploma in Information & Communication Technology',institute:'IMBS Green University',description:'I got my first professional qualification in Institute of Management & Business Studies (IMBS). I successfully completed 2 years diploma in Information & Communication Technology which was certified by Prof. Sarath Amunugama and United Kingdom & Distance Learning Center in Sri Lanka . I could get a great experience in Engineering field from IMBS Green Campus.',update:'Last updated 3 mins ago',img:'assets/images/green.png'},
@@ -53,6 +58,23 @@ if(educationContainer) {
             </div>
         `;
         educationContainer.appendChild(card);
+    });
+}
+const experienceContainer = document.getElementById('exp-card');
+if(experienceContainer) {
+    experience.forEach(exp => {
+        const card = document.createElement('div');
+        card.className = 'card text-center';
+        card.style='max-width: auto;margin: 50px; background-color: #dde0e2ff;';
+        card.innerHTML = `
+                <div class="col-md-12 col-lg-12">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bolder">${exp.title}</h5>
+                        <p class="text-center">${exp.description}</p>
+                    </div>
+                </div>
+        `;
+        experienceContainer.appendChild(card);
     });
 }
 
