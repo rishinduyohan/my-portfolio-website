@@ -183,7 +183,7 @@ if (navbarContainer) {
                 <li class="nav-item"><a class="nav-color " href="#">Skills</a></li>
                 <li class="nav-item"><a class="nav-color " href="#">Projects</a></li>
                 <li class="nav-item">
-                <a class="btn btn-light rounded-pill px-3" href="#">CONTACT ME</a>
+                <a class="btn btn-light rounded-pill px-3" href="contact.html">CONTACT ME</a>
                 </li>
             </ul>
             </div>
@@ -224,3 +224,51 @@ if (footerContainer) {
     `;
     footerContainer.appendChild(footerContent);
 }
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    const contactContent = document.createElement('div');
+    contactContent.className = 'container-md-8';
+    contactContent.innerHTML = `
+       <div class="row align-items-center">
+                <div class="col-md-6 p-5 left-section">
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" class="form-control border-0 border-bottom border-dark bg-transparent pb-2" 
+                                       placeholder="ENTER YOUR NAME*" 
+                                       style="border-radius: 0; box-shadow: none;">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <input type="email" class="form-control border-0 border-bottom border-dark bg-transparent pb-2" 
+                                       placeholder="ENTER YOUR EMAIL*" 
+                                       style="border-radius: 0; box-shadow: none;">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <input type="tel" class="form-control border-0 border-bottom border-dark bg-transparent pb-2" 
+                                       placeholder="PHONE NUMBER" 
+                                       style="border-radius: 0; box-shadow: none;">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <textarea class="form-control border-0 border-bottom border-dark bg-transparent" 
+                                          rows="4" 
+                                          placeholder="YOUR MESSAGE*" 
+                                          style="border-radius: 0; box-shadow: none; resize: none;"></textarea>
+                            </div>
+                            
+                            <div class="text-start">
+                                <button type="submit" class="btn fw-bold px-5 py-2" style="letter-spacing: 2px;">
+                                   | SUBMIT |
+                                </button>
+                            </div>
+                        </form>
+                        </div>
+                <div class="col-md-6 text-center right-section">
+                    <img src="assets/images/new.png" alt="Rishindu Yohan" class="img-fluid animated-photo">
+                </div>
+        </div>
+    `;
+    contactForm.appendChild(contactContent);
+}
+
