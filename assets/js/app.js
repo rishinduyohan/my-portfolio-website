@@ -255,34 +255,34 @@ if (contactForm) {
 const HomepageContainer = document.getElementById('homepage');
 if (HomepageContainer) {
     const homepageContent = document.createElement('div');
-    homepageContent.className = 'container-md-8';
+    homepageContent.className = 'container';
     homepageContent.innerHTML = `
         <div class="row align-items-center">
-                <!-- Left Section -->
-                <div class="col-md-6 p-5 left-section">
-                    <h5 class="fw-bold mb-4">Hi, I am</h5>
-                    <h1 class="fw-bold color-navy mb-3">Rishindu Yohan</h1>
-                    <h5 class="fw-bolder color-gray">Full-Stack Developer / UI Designer</h5>
-                    <p class="mt-3 color-navy mt-2 me-3 mb-4">
-                        “Hello! I'm Rishindu Yohan. While I'm still on my educational journey, my eyes are set on the
-                        long road ahead with enthusiasm for the next challenge and the next solution. My journey into
-                        the tech world is fueled by a passion for problem-solving and the thrill of turning complex
-                        challenges into streamlined software solutions.”
-                    </p>
-                    <a href="about.html" class="fw-bold color-navy text-decoration-none ">
-                        | READ MORE |<i class="ms-2"></i>
-                    </a>
-                    <div class="mt-5 d-flex gap-4">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rishinduyohan@gmail.com" class="icon-box"><i class="fa-solid fa-at "></i></a>
-                        <a href="https://github.com/rishinduyohan" class="icon-box"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/rishindupeeris" class="icon-box"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <!-- Right Section -->
-                <div class="col-md-6 text-center right-section">
-                    <img src="assets/images/new.png" alt="Rishindu Yohan" class="img-fluid animated-photo">
+            <!-- Left Section -->
+            <div class="col-12 col-md-6 p-4 left-section order-2 order-md-1">
+                <h5 class="fw-bold mb-4">Hi, I am</h5>
+                <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=40&duration=3000&pause=1000&color=14213D&vCenter=true&width=600&lines=Rishindu+Yohan;Developer;Designer;" alt="Typing SVG" class="img-fluid mb-3" style="max-width:100%;height:auto;" />
+                <h5 class="fw-bolder color-gray">Full-Stack Developer / UI Designer</h5>
+                <p class="mt-3 color-navy mt-2 me-3 mb-4">
+                    “Hello! I'm Rishindu Yohan. While I'm still on my educational journey, my eyes are set on the
+                    long road ahead with enthusiasm for the next challenge and the next solution. My journey into
+                    the tech world is fueled by a passion for problem-solving and the thrill of turning complex
+                    challenges into streamlined software solutions.”
+                </p>
+                <a href="about.html" class="fw-bold color-navy text-decoration-none ">
+                    | READ MORE |<i class="ms-2"></i>
+                </a>
+                <div class="mt-5 d-flex gap-4 flex-wrap">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rishinduyohan@gmail.com" class="icon-box"><i class="fa-solid fa-at "></i></a>
+                    <a href="https://github.com/rishinduyohan" class="icon-box"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rishindupeeris" class="icon-box"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
+            <!-- Right Section -->
+            <div class="col-12 col-md-6 text-center right-section order-1 order-md-2 mb-4 mb-md-0">
+                <img src="assets/images/new.png" alt="Rishindu Yohan" class="img-fluid animated-photo" style="max-width: fit-content; width: 100%; height: auto;">
+            </div>
+        </div>
     `;
     HomepageContainer.appendChild(homepageContent);
 }
