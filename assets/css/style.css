@@ -40,7 +40,7 @@
 }
 
 .nav-color:hover {
-    color: #e6e6e6;
+    color: #caa70b;
 }
 
 .animated-photo {
@@ -81,4 +81,15 @@
 
 .color-gray {
     color: #62656B;
+}
+@media (max-width: 900px) {
+    .p-color {
+        color: #0b1c3b;
+    }
+}
+
+@media (min-width: 901px) {
+    .p-color {
+        color:#e6e6e6;
+    }
 }
