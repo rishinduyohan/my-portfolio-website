@@ -40,12 +40,12 @@ const learningSkills = [
     { title: 'Tailwind', img: 'assets/images/icons8-tailwind-css.svg' },
 ];
 const projects = [
-    { description: '  I developed this Burger Shop Management System as my desktop application using Java Swing. The primary goal of the project is to store, update, and manage customer records through text file handling, showcasing my ability to work with Java file I/O operations effectively. ', img: 'assets/images/burger.png', link: '' },
-    { description: '  Jungle Co. is a modern and visually engaging front-end web application I developed using HTML, CSS, JavaScript, and Bootstrap. This project is designed as an e-commerce interface for a plant and nature-themed brand, aiming to deliver an immersive and calming user experience. ', img: 'assets/images/jungle.png', link: '' },
-    { description: '  I developed this Learning Management System as my desktop application using Java Swing. The system is designed to streamline academic operations in educational institutes, offering key modules including Student Management, Batch Management, Grade, and Reports Management', img: 'assets/images/lms.png', link: '' },
-    { description: '  I developed this school website using basic HTML and css. The website is designed to school operations, offering key modules including Student Management, Academics, About, facilities, and Contacts', img: 'assets/images/school.png', link: '' },
-    { description: '  I developed this Chat game as my desktop application using Java Swing. I use polymophic power to handle the swing files. This project showcasing my ability to work with Java swing and polymorphism effectively. ', img: 'assets/images/chat.png', link: '' },
-    { description: '  The iMart Bill Print Program is a command-line based billing system developed using Java. It is designed to simulate a real-world retail billing experience by collecting customer details, item quantities, and automatically calculating and printing a formatted bill.', img: 'assets/images/bill.png', link: '' },
+    { description: '  I developed this Burger Shop Management System as my desktop application using Java Swing. The primary goal of the project is to store, update, and manage customer records through text file handling, showcasing my ability to work with Java file I/O operations effectively. ', img: 'assets/images/burger.png', link:'https://github.com/rishinduyohan/Burger-shop-Java-Swing' },
+    { description: '  Jungle Co. is a modern and visually engaging front-end web application I developed using HTML, CSS, JavaScript, and Bootstrap. This project is designed as an e-commerce interface for a plant and nature-themed brand, aiming to deliver an immersive and calming user experience. ', img: 'assets/images/jungle.png', link:'https://github.com/rishinduyohan/Jungle_Co._website' },
+    { description: '  I developed this Learning Management System as my desktop application using Java Swing. The system is designed to streamline academic operations in educational institutes, offering key modules including Student Management, Batch Management, Grade, and Reports Management', img: 'assets/images/lms.png', link:'https://drive.google.com/drive/folders/10n_1-kiQCTAZQOf_dVuaki2z4A8GYx4W?usp=sharing' },
+    { description: '  I developed this school website using basic HTML and css. The website is designed to school operations, offering key modules including Student Management, Academics, About, facilities, and Contacts', img: 'assets/images/school.png', link:'https://github.com/rishinduyohan/Kegalu_Vidyalaya' },
+    { description: '  I developed this Chat game as my desktop application using Java Swing. I use polymophic power to handle the swing files. This project showcasing my ability to work with Java swing and polymorphism effectively. ', img: 'assets/images/chat.png', link:'#' },
+    { description: '  The iMart Bill Print Program is a command-line based billing system developed using Java. It is designed to simulate a real-world retail billing experience by collecting customer details, item quantities, and automatically calculating and printing a formatted bill.', img: 'assets/images/bill.png', link:'https://drive.google.com/drive/folders/1RmvoBFRTtg1FVO7srvwoxCIJmylFmHlC?usp=sharing' },
 
 ];
 const projectsContainer = document.getElementById('projects');
@@ -59,7 +59,7 @@ if (projectsContainer) {
             <div class="card-body d-flex flex-column">
               <p class="card-text small">${project.description}</p>
               <div class="text-center rounded-4">
-              <a href="#" class="mt-auto btn w-25 text-center rounded-5 text-light" style="background-color: #14213D;">View</a>
+              <a href="${project.link}" class="mt-auto btn w-25 text-center rounded-5 text-light" style="background-color: #14213D;">View</a>
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@ if (HomepageContainer) {
             <!-- Left Section -->
             <div class="col-12 col-md-6 p-4 left-section order-2 order-md-1">
                 <h5 class="fw-bold mb-4">Hi, I am</h5>
-                <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=40&duration=3000&pause=1000&color=14213D&vCenter=true&width=600&lines=Rishindu+Yohan;Developer;Designer;" alt="Typing SVG" class="img-fluid mb-3" style="max-width:100%;height:auto;" />
+                <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=40&duration=3000&pause=1000&color=14213D&vCenter=true&width=600&lines=Rishindu+Yohan;Full-Stack+Developer;UI/UX+Designer;" alt="Typing SVG" class="img-fluid mb-3" style="max-width:100%;height:auto;" />
                 <h5 class="fw-bolder color-gray">Full-Stack Developer / UI Designer</h5>
                 <p class="mt-3 color-navy mt-2 me-3 mb-4">
                     “Hello! I'm Rishindu Yohan. While I'm still on my educational journey, my eyes are set on the
