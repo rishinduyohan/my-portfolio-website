@@ -39,6 +39,34 @@ const learningSkills=[
     {title:'Premiere Pro', img:'assets/images/icons8-adobe-premiere-pro.svg'},
     {title:'Tailwind', img:'assets/images/icons8-tailwind-css.svg'},
 ];
+const projects=[
+    { description: '  I developed this Burger Shop Management System as my desktop application using Java Swing. The primary goal of the project is to store, update, and manage customer records through text file handling, showcasing my ability to work with Java file I/O operations effectively. ', img: 'assets/images/burger.png',link:''},
+    { description: '  Jungle Co. is a modern and visually engaging front-end web application I developed using HTML, CSS, JavaScript, and Bootstrap. This project is designed as an e-commerce interface for a plant and nature-themed brand, aiming to deliver an immersive and calming user experience. ', img: 'assets/images/jungle.png',link:'' },
+    { description: '  I developed this Learning Management System as my desktop application using Java Swing. The system is designed to streamline academic operations in educational institutes, offering key modules including Student Management, Batch Management, Grade, and Reports Management', img: 'assets/images/lms.png',link:'' },
+    { description: '  I developed this school website using basic HTML and css. The website is designed to school operations, offering key modules including Student Management, Academics, About, facilities, and Contacts', img: 'assets/images/school.png',link:'' },
+    { description: '  I developed this Chat game as my desktop application using Java Swing. I use polymophic power to handle the swing files. This project showcasing my ability to work with Java swing and polymorphism effectively. ', img: 'assets/images/chat.png',link:'' },
+    { description: '  The iMart Bill Print Program is a command-line based billing system developed using Java. It is designed to simulate a real-world retail billing experience by collecting customer details, item quantities, and automatically calculating and printing a formatted bill.', img: 'assets/images/bill.png',link:'' },
+
+];
+const projectsContainer = document.getElementById('projects');
+if (projectsContainer) {
+    projects.forEach(project => {
+        const projectItem = document.createElement('div');
+        projectItem.className = 'col-md-6 col-lg-4';
+        projectItem.innerHTML = `
+        <div class="card project-card h-100 shadow-sm">
+            <img src="${project.img}" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text small">${project.description}</p>
+              <div class="text-center rounded-4">
+              <a href="#" class="mt-auto btn w-25 text-center rounded-5 text-light" style="background-color: #14213D;">View</a>
+              </div>
+            </div>
+          </div>
+        `;
+        projectsContainer.appendChild(projectItem);
+    });
+}
 const usingSkillsContainer = document.getElementById('using-skills');
 if(usingSkillsContainer){
     usingSkills.forEach(skill => {
