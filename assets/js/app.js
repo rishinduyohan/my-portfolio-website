@@ -358,4 +358,3 @@ if (AboutContainer) {
     }
     AboutContainer.appendChild(aboutContent);
 }
-
