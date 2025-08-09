@@ -1,17 +1,25 @@
 
     const items = [
-        { id: 1, title: 'Freelance Writer', description: ' I’m working as a writer in Medium.com', img: 'assets/images/medium.png' },
-        { id: 1, title: 'Software Engineering Student', description: ' I’m a software engineering student at iCET', img: 'assets/images/green.png' },
-        { id: 1, title: 'Designer', description: ' I’m a Graphic Designer of CV&B', img: 'assets/images/CV&B.png' },
+        { id: 1, title: 'Freelance Writer', description: ' I’m working as a writer in <br>Medium.com', img: 'assets/images/medium.png' },
+        { id: 2, title: 'Software <br>Engineering Student', description: 'I’m a software engineering<br> student at ICET.', img: 'assets/images/images.png' },
+        { id: 3, title: 'Designer', description: ' I’m a Graphic Designer <br>of CV&B', img: 'assets/images/CV&B.png' },
     ];
 
-const container = document.getElementById('');
+const container = document.getElementById('about-cards');
 if (container) {
-    items.forEach(plants => {
+    items.forEach(activity => {
         const card = document.createElement('div');
-        card.className = 'col-sm-6 col-md-4 col-lg-4';
+        card.className = 'col-lg-4 col-md-4 col-12';
         card.innerHTML = `
-           
+           <div class="card text-white border-secondary h-100" style="background-color:#14213D;">
+                <div class="card-body d-flex flex-column justify-content-center text-center p-4">
+                    <div class="p-3 mb-4">
+                        <img src="${activity.img}" alt="${activity.title}" style="width: 100px;border-radius: 50%;">
+                    </div>
+                    <h3 class="card-title fs-4 fw-bold mb-3">${activity.title}</h3>
+                    <p class="card-text text-white-50">${activity.description}</p>
+                </div>
+            </div>
         `;
         container.appendChild(card);
     });
