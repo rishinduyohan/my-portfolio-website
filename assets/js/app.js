@@ -15,7 +15,64 @@ const education = [
     {id:3, title:'G.C.E Advanced Level Examination - 2024',institute:'Index No : 2520117',description:'Achieved strong academic results in the G.C.E. A/L Examination, demonstrating proficiency in a broad range of disciplines: <br><br>Geography - A <br>Arts -A <br>ICT - B <br>District Rank - 130',update:'',img:'assets/images/school.jpg'},
 
 ];
-
+const usingSkills = [
+    {title:'HTML', img:'assets/images/icons8-html.svg'},
+    {title:'CSS', img:'assets/images/icons8-css.svg'},
+    {title:'JavaScript', img:'assets/images/icons8-javascript.svg'},
+    {title:'Node.js', img:'assets/images/icons8-node-js.svg'},
+    {title:'Java', img:'assets/images/icons8-java.svg'},
+    {title:'Photoshop',img:'assets/images/icons8-adobe-photoshop.svg'},
+    {title:'C++', img:'assets/images/icons8-c++.svg'},
+    {title:'Bootstrap', img:'assets/images/icons8-bootstrap.svg'},
+    {title:'Figma', img:'assets/images/icons8-figma.svg'},
+    {title:'Intellij', img:'assets/images/icons8-intellij-idea.svg'},
+    {title:'Git', img:'assets/images/icons8-git.svg'},
+    {title:'Mysql', img:'assets/images/icons8-mysql-logo.svg'}
+];
+const learningSkills=[
+    {title:'Python', img:'assets/images/icons8-python.svg'},
+    {title:'C', img:'assets/images/icons8-c.svg'},
+    {title:'TypeScript', img:'assets/images/icons8-typescript.svg'},
+    {title:'Blender', img:'assets/images/icons8-blender-3d.svg'},
+    {title:'Illustrator', img:'assets/images/icons8-adobe-illustrator.svg'},
+    {title:'Netbeans', img:'assets/images/icons8-apache-netbeans.svg'},
+    {title:'Premiere Pro', img:'assets/images/icons8-adobe-premiere-pro.svg'},
+    {title:'Tailwind', img:'assets/images/icons8-tailwind-css.svg'},
+];
+const usingSkillsContainer = document.getElementById('using-skills');
+if(usingSkillsContainer){
+    usingSkills.forEach(skill => {
+        const skillItem = document.createElement('div');
+        skillItem.className = 'col-6 col-md-3 col-lg-3';
+        skillItem.innerHTML = `
+                <div class="text-center">
+                    <div class="p-3 mb-2 d-flex justify-content-center"
+                        style="height: 80px;">
+                        <img src="${skill.img}" alt="${skill.title}">
+                    </div>
+                    <small class="text-dark">${skill.title}</small>
+                </div>
+        `;
+        usingSkillsContainer.appendChild(skillItem);
+    });
+}
+const learningSkillsContainer = document.getElementById('learning-skills');
+if(learningSkillsContainer){
+    learningSkills.forEach(skill => {
+        const skillItem = document.createElement('div');
+        skillItem.className = 'col-6 col-md-3 col-lg-3';
+        skillItem.innerHTML = `
+                <div class="text-center">
+                    <div class="p-3 mb-2 d-flex justify-content-center"
+                        style="height: 80px;">
+                        <img src="${skill.img}" alt="${skill.title}">
+                    </div>
+                    <small class="text-dark">${skill.title}</small>
+                </div>
+        `;
+        learningSkillsContainer.appendChild(skillItem);
+    });
+}
 const container = document.getElementById('about-cards');
 if (container) {
     items.forEach(activity => {
