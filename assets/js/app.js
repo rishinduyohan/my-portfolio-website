@@ -1,9 +1,15 @@
 
-    const items = [
-        { id: 1, title: 'Freelance Writer', description: ' I’m working as a writer in <br>Medium.com', img: 'assets/images/medium.png' },
-        { id: 2, title: 'Software <br>Engineering Student', description: 'I’m a software engineering<br> student at ICET.', img: 'assets/images/images.png' },
-        { id: 3, title: 'Designer', description: ' I’m a Graphic Designer <br>of CV&B', img: 'assets/images/CV&B.png' },
-    ];
+const items = [
+    { id: 1, title: 'Freelance Writer', description: ' I’m working as a writer in <br>Medium.com', img: 'assets/images/medium.png' },
+    { id: 2, title: 'Software <br>Engineering Student', description: 'I’m a software engineering<br> student at ICET.', img: 'assets/images/images.png' },
+    { id: 3, title: 'Designer', description: ' I’m a Graphic Designer <br>of CV&B', img: 'assets/images/CV&B.png' },
+];
+const education = [
+    {id:1, title:'HND in Software Engineering',institute:'Institute of Computer Eng. Technology',description:'I am an aspiring software engineer currently studying at the Institute of Computer Engineering Technology (iCET). My academic path is intricately woven with my innate flair for coding and a keen interest in project management.',update:'Last updated 3 mins ago',img:'assets/images/images.png'},
+    {id:2, title:'Diploma in Information & Communication Technology',institute:'IMBS Green University',description:'I got my first professional qualification in Institute of Management & Business Studies (IMBS). I successfully completed 2 years diploma in Information & Communication Technology which was certified by Prof. Sarath Amunugama and United Kingdom & Distance Learning Center in Sri Lanka . I could get a great experience in Engineering field from IMBS Green Campus.',update:'Last updated 3 mins ago',img:'assets/images/green.png'},
+    {id:3, title:'G.C.E Advanced Level Examination - 2024',institute:'Index No : 2520117',description:'Achieved strong academic results in the G.C.E. A/L Examination, demonstrating proficiency in a broad range of disciplines: <br><br>Geography - A <br>Arts -A <br>ICT - B <br>District Rank - 130',update:'',img:'assets/images/school.jpg'},
+
+];
 
 const container = document.getElementById('about-cards');
 if (container) {
@@ -22,6 +28,31 @@ if (container) {
             </div>
         `;
         container.appendChild(card);
+    });
+}
+const educationContainer = document.getElementById('edu-card');
+if(educationContainer) {
+    education.forEach(edu => {
+        const card = document.createElement('div');
+        card.className = 'card mb-3';
+        card.style='max-width: auto;margin: 50px;';
+        card.innerHTML = `
+            <div class="row g-0">
+            <div class="col-md-4">
+                    <img src="${edu.img}" class="img-fluid rounded-start col-lg-12" alt="icet"
+                        style="width:fit-content; ">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bolder">${edu.title}</h5>
+                        <p class="text-lg-start">${edu.institute}</p>
+                        <p class="card-text">${edu.description}</p>
+                        <p class="card-text"><small class="text-body-secondary">${edu.update}</small></p>
+                    </div>
+                </div>
+            </div>
+        `;
+        educationContainer.appendChild(card);
     });
 }
 
