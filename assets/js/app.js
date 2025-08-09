@@ -180,8 +180,8 @@ if (navbarContainer) {
             <ul class="navbar-nav align-items-center">
                 <li class="nav-item"><a class="nav-color" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-color" href="about.html">About me</a></li>
-                <li class="nav-item"><a class="nav-color " href="#">Skills</a></li>
-                <li class="nav-item"><a class="nav-color " href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-color " href="about.html#skills-id">Skills</a></li>
+                <li class="nav-item"><a class="nav-color " href="about.html#projects">Projects</a></li>
                 <li class="nav-item">
                 <a class="btn btn-light rounded-pill px-3" href="contact.html">CONTACT ME</a>
                 </li>
