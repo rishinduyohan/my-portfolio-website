@@ -191,3 +191,36 @@ if (navbarContainer) {
         `;
     navbarContainer.appendChild(navItem);
 }
+const footerContainer = document.getElementById('footer');
+if (footerContainer) {
+    const footerContent = document.createElement('div');
+    footerContent.className = 'container py-4';
+    footerContent.innerHTML = `
+        <div class="text-center mb-3">
+                    <img src="assets/images/ic_baseline-double-arrow-1.svg">
+                    <a href="#" class="text-white text-decoration-none d-inline-flex align-items-center">
+                        <span class="fw-bold">Back to top</span>
+                    </a>
+                </div>
+                <div class="text-center mb-3">
+                    <div class="d-inline-flex gap-3">
+                    <a href="https://wa.me/your-number" >
+                        <img src="assets/images/icons8-whatsapp.svg" alt="whatsapp"style="width: 60px;height: 60px;">
+                    </a>
+                    <a href="mailto:your-email@gmail.com">
+                        <img src="assets/images/icons8-gmail-logo.svg" alt="gmail"style="width: 60px;height: 60px;">
+                    </a>
+                    <a href="https://facebook.com/your-profile" >
+                        <img src="assets/images/icons8-facebook.svg" alt="fb"style="width: 60px;height: 60px;">
+                    </a>
+                    <a href="https://instagram.com/your-profile" >
+                        <img src="assets/images/icons8-instagram.svg" alt="instagram" style="width: 60px;height: 60px;">
+                    </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="text-white mb-0 small"><b>@2025 Rishindu Yohan</b> All Rights Reserved.</p>
+                </div>
+    `;
+    footerContainer.appendChild(footerContent);
+}
